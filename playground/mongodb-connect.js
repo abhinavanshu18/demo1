@@ -93,10 +93,10 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,client) => {
     client.close();
 });
 
-MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,client) => {
-  const db = client.db;
-  db.collection('Todos').find({status:false}).toArray().then((docs) => {
-    console.log("Content inside the docs : ", docs);  
-  })
-    client.close();
-})
+//MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,client) => {
+//  const db = client.db;
+//  db.collection('Todos').find({status:false}).toArray().then((docs) => {
+//    console.log("Content inside the docs : ", docs);  
+//  })
+//    client.close();
+//})
